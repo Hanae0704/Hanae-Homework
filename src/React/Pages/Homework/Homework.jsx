@@ -25,7 +25,7 @@ export default Homework;
 
 const HomeworkStyled = styled.div`
 
-border: dashed 5px teal;
+/* border: dashed 3px blue; */
 padding: 20px;
 background-color: #ccc;
 
@@ -53,6 +53,20 @@ const essays = [
             <p>Prop Drilling means in React is the process of getting data to parts of the React Component tree.</p>
             <p>Unidirectional data flow means that the parents component passes the state information down to its child components. The concept of this is that data has one way to be transferred to other parts of application. </p>
             <p>Pros of the unidirectional data flow is that it has less error because I have more control over my data and is easier to debug because I know what is coming from where. </p>
+            </div>
+            )
+        }
+    },
+    {
+        title: '03',
+        question: 'In React, what is Redux? Why do we need Redux? Is Redux the only option?',
+        AnswerComponent: () => {
+            return (
+            <div>
+            <p>Redux is a state container for JavaScript applications. In React. Redux is UI binding library for React. </p>
+            <p>Redux helps to write applications and run in different environments, such as client or server, and that is easy to test. </p>
+            <p>We need Redux because Redux in React is kept up to date with any API changes from library to make sure that React components behave as expected.</p>
+            <p>Also, Redux in React implements several optimizations to make sure the component only re-renders when actually necessary.</p>
             </div>
             )
         }
