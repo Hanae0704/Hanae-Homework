@@ -71,5 +71,57 @@ const essays = [
             )
         }
     },
+    {
+        title: '04',
+        question: 'What is middleware? What does the Thunk Middleware do for Redux?',
+        AnswerComponent: () => {
+            return (
+            <div>
+            <p>Middleware is software which is in the middle of an operating system and the applications, and allows them to communicate with each other. </p>
+            <p>Redux Thunk middleware allows you to write action creators that return a function instead of an action. Thunk middleware is the way to extend Redux with custom functionality.</p>
+            <p>However, the thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.</p>
+            </div>
+            )
+        }
+    },
+    {
+        title: '05',
+        question: '..',
+        AnswerComponent: () => {
+            return (
+            <div>
+            <p>..</p>
+            <p>..</p>
+            <p>..</p>
+            </div>
+            )
+        }
+    },
+    {
+        title: '06',
+        question: '..',
+        AnswerComponent: () => {
+            return (
+            <div>
+            <p>..</p>
+            <p>..</p>
+            <p>..</p>
+            </div>
+            )
+        }
+    },
+    {
+        title: '07',
+        question: '..',
+        AnswerComponent: () => {
+            return (
+            <div>
+            <p>..</p>
+            <p>..</p>
+            <p>..</p>
+            </div>
+            )
+        }
+    },
 ]
 
