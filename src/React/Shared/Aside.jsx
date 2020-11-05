@@ -1,22 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Aside = ({auction}) => {
+/* Redux ---------------------------*/
+import { useSelector } from 'react-redux';
 
-    console.log('Aside Auction', auction);
+const Aside = () => {
 
-    const theAuction = (auction) ? auction 
-    : { id: 64, title: 'Whatever - Fallback'};
-
-    // const {
-    //     id=64,
-    //     title='whatever',
-    //     } = auction;
+    const {auction} = useSelector((state) => state);
 
     return (
         <AsideStyled className='Aside'>
-            <img src={`/assets/img/auctions/${theAuction.id}/auction.jpg`} alt={theAuction.title}/>
-            <h2>{theAuction.title}</h2>
+            <img 
+            src={`/assets/img/auctions/${auction.id}/auction.jpg`} 
+            alt={auction.title}/>
+
+            <h2>{auction.title}</h2>
         </AsideStyled>
     );
 }

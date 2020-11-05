@@ -4,19 +4,15 @@ import { Switch, Route } from 'react-router-dom';
 
 /* Component ---------------------------*/
 import Home from '../Pages/Home.jsx';
-import Auction from '../Pages/Auction.jsx';
-import Login from '../Pages/Login.jsx';
+import Auction from '../Pages/Auction/Auction.jsx';
 import Contact from '../Pages/Contact.jsx';
 import Homework from '../Pages/Homework/Homework.jsx';
 
-const Content = ({auction}) => {
-
-    console.log('Content Auction', auction);
+const Content = () => {
 
     return (
         <ContentStyled className='Content'>
             <Switch>
-            <Route path='/login' component={ () => <Login auction={ auction }/> }/>
             <Route path='/auction' component={ Auction }/>
             <Route path='/contact' component={ Contact }/>
             <Route path='/homework' component={ Homework }/>
