@@ -155,6 +155,29 @@ const essays = [
             )
         }
     },
+    {
+        title: '11',
+        question: 'What does JavaScript Destructuring do?',
+        AnswerComponent: () => {
+            return (
+            <div>
+            <p>JavaScript destructuring remove properties from objects and bind them to variables.</p>
+            <p>This can also remove multiple properties in one statement.</p>
+            </div>
+            )
+        }
+    },
+    {
+        title: '12',
+        question: 'In React, what is a controlled input?',
+        AnswerComponent: () => {
+            return (
+            <div>
+            <p>Controlled input is an input that gets its value from a single source of truth, which we cannot change or update the element.</p>
+            </div>
+            )
+        }
+    },
     
 ]
 
